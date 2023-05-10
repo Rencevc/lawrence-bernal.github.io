@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>
+            body {
+                background-image: url('wer.jpg');
+                margin: auto;
+                color: #123456;
+
+                
+            }
+            .style {
+                color: black;
+                border-radius: 50px;
+                font-size: 30px;
+                font-style: italic;
+                font-family: serif;
+
+            }
+            .btnstyle {
+                background-color: blue;
+                color: black;
+                border-radius: 50px;
+                font-family: Cooper white;
+                font-size: 20px;
+                
+            }
+            .btnstyle:hover {
+                background-color: skyblue;
+                color: black;
+            }
+            .btn {
+                font-size: 20px;
+                color: rgb(0, 0, 80);
+                font-family: Cooper Black;
+            }
+            .btn2 {
+                font-size: 40px;
+                color: #d5e5f4;
+                font-family: Cooper Black;
+            }
+            .box {
+                color: blueviolet;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .box :hover {
+                background-color: skyblue;
+                color: black;
+            }
+
+            .design {
+                
+                padding: 50px;
+                width: 300px;
+            }
+            
+        </style>
+    </head>
+
+<body>
+    <center> 
+        <div  class="design" ><br>
+        <h1><p class="btn2">Login</p></h1><br>
+        <table>
+            <p class="box"><input class="style" id="Uname" placeholder="  Username "></p><br>
+            <p class="box"><input class="style" type="password" id="Pword" placeholder="  Password "></p>
+            <center><button class="btnstyle" onclick="login()">Login</button></center><br></br>
+        </div>
+    </center>
+    
+    <script>
+      function login() {
+        var Uname = document.getElementById("Uname").value;
+        var Pword = document.getElementById("Pword").value;
+
+        if (Uname == "log" && Pword== "in") {
+            alert("Log in Successfully");
+        }
+        else if (Uname == "" && Pword == ""){
+            alert("All Textboxes Are Empty");
+        }
+        else if (Uname == "" && Pword == "in") {
+            alert("Username is Empty");
+        }
+        else if (Uname == "log" && Pword == "") {
+            alert("Password is Empty");
+        }
+        else if (Uname != "" && Pword == "in"){
+            alert("Incorrect Username");
+        }
+        else if (Uname == "log" && Pword != ""){
+            alert("Incorrect Password");
+        }
+        else {
+            (Uname != "" && Pword != "")
+            alert("Invalid Username and Password");
+        }
+      }   
+
+    </script>
+</body>
+
+</html>

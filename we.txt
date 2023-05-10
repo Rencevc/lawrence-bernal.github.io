@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="pw.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo" data-aos="fade-down" data-aos-offset="200" data-aos-duration="300">Kaceykikyam</a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav" data-aos="fade-down" data-aos-offset="300" data-aos-duration="400">
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#personal info" onclick="toggleMenu();">About</a></li>
+            <li><a href="#educational background" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#hobbies" onclick="toggleMenu();">Activities</a></li>
+            
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="600">Hi,
+            </p>
+            <p class="malaki" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="600"
+                data-aos-duration="700">Im <a href="#personal info"><span id="dev">Lawrence</span></a></p>
+            <div class="details" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                data-aos-duration="600">Riven Main</div>
+            <a href="#personal info" class="button" style="transition: 0.5s ease-in-out;" data-aos="zoom-in"
+                data-aos-delay="500" data-aos-duration="700">Explore</a>
+        </div>
+    </section>
+
+    <section class="about" id="personal info">
+        <div class="row">
+            <div class="co150">
+                <div class="imgBx" data-aos="fade-up" data-aos-offset="500" data-aos-duration="600">
+                    <img src=_DSC0020.JPG height=580px width=900px>
+                </div>
+            </div>
+            <div class="co150">
+                <h2 class="titleText" id="box" data-aos="fade-down" data-aos-offset="500" data-aos-duration="600" onclick="nagan()" ondblclick="normal()">
+                    Hey, It's Me</h2>
+                <p data-aos="fade-right" data-aos-offset="500" data-aos-duration="600">Hi, Welcome To My Website! I am
+                    Lawrence Alvarado Bernal, 20 years of age, raised and born at Binalonan, Pangasinan,
+                    Philippines. I am currently enrolled at Abra State Institute of Sciences and
+                    Technology, Main Campus with the course Bachelor of Science in Information Technology. I am
+                    currently living at Talogtog, Dolores, Abra. I am the youngest among us with my sibling.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="educational background" id="educational background">
+        <div class="title">
+            <h2 class="titleText"><span>M</span>y <span>S</span>kills <span></h2>
+            <p>I am a food lover, but I keep my body fit by doing some
+                exercises and sports including Volleyball. I also love playing online games, and one of my
+                most used game application is League of Legends. I've spend a lot of time playing LoL as it is my
+                stress reliever. Below you can find my account. Follow and will play together. I also love watching movies.</p>
+        </div>
+    </section>
+
+    <section class="hobbies" id="hobbies">
+        <div class="title">
+            <h2 class="titleText"><span>A</span>ctivities</h2>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="8.jpg">
+                </div>
+            </div>
+            <div class="box">e
+                <div class="imgBx">
+                    <img src="12.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="11.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="channel.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="4.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="13.jpg">
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="14.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="button">Scroll Up</a>
+        </div>
+    </section>
+
+    
+
+    <section class="follow" id="follow">
+        <div class="title">
+            <h2 class="titleText"><span>F</span>ollow <span>M</span>e</h2>
+            <p>You can follow me on Instagram, Facebook, or YouTube to be updated to my new uploads.<br>Instagram: <a
+                    href="#"> brencevc</a> Facebook: <a href="#">Lawrence Bernal</a> YouTube: <a
+                    href="#">batak</a>.</p>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright @2021 <a href="#banner">Lawrence Bernal</a>. All Right Reserved</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const nav = document.querySelector('.nav');
+            menuToggle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+
+        const dev = document.getElementById('dev');
+
+        dev.addEventListener('mouseover', function point() {
+            dev.style.color = 'yellowgreen';
+        });
+
+        dev.addEventListener('mouseout', function pointout() {
+            dev.style.color = 'white';
+        });
+
+        function nagan() {
+            document.getElementById('box').innerHTML = "DENZEL";
+        }
+
+        function normal() {
+            document.getElementById('box').innerHTML = "HEY, IT'S ME";
+        }
+    </script>
+</body>
+
+
+</html>
+
+
+
+<section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2 id="con">Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="form">
+            <form id="form" action="mailto:example@example.com/email-submit">
+                <input type="email" id="email" placeholder="Your Email Address" name="email" required /><br>
+                <a href="#" target="_blank" id="submit" class="btn contact-submit"><i class="fas fa-arrow-right"></i></a
+                    </form>
+        </div>
+        <div class="contact-links">
+            <a href="#" target="_blank" class="btn contact-details"><i class="fab fa-instagram"></i></a>
+            <a id="profile-link" href="https://github.com/lazy4gyan" target="_blank" class="btn contact-details"><i
+                    class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="btn contact-details"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn contact-details"><i class="fas fa-mobile-alt"></i></a>
+        </div>
+    </section>
+
+
+
+<section class="educational background" id="Skills">
+        <div class="title">
+            <h2 class="titleText"><span>M</span>y <span>S</span>kills <span></h2>
+
+
+git config --global --unset user.email

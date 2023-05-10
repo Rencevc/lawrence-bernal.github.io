@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>
+            body {
+                background-color: #848884;
+                color: #123456;
+                
+            }
+            .style {
+                color: blue;
+                border-radius: 50px;
+                font-size: 30px;
+                font-style: italic;
+                font-family: serif;
+
+            }
+            .btnstyle {
+                background-color: #123456;
+                color: skyblue;
+                border-radius: 50px;
+                font-family: Cooper black;
+                font-size: 20px;
+            }
+            .btnstyle:hover {
+                background-color: aquamarine;
+                color: blue;
+            }
+            .btn {
+                font-size: 20px;
+                color: cyan;
+                font-family: Cooper Black;
+            }
+            .btn2 {
+                font-size: 40px;
+                color: blue;
+                font-family: Cooper Black;
+            }
+            .box {
+                color: blue;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .box :hover {
+                background-color: rgb(201, 255, 92);
+                color: black;
+            }
+
+            .design {
+                border: 10px solid #00008b;
+                padding: 25px;
+                width: 300px;
+            }
+            
+        </style>
+    </head>
+
+<body>
+    <center>
+        <div class="design">
+        <h1><p class="btn2">Personal Info.</p></h1>
+        <table>
+            <p class="box"><input class="style" onkeydown="count()" id="myFirst" placeholder="  First Name "></p>
+            <p class="box"><input class="style" onkeydown="count()" id="myLast" placeholder="  Last Name "></p>
+            <p class="box"> <input class="style"  onkeydown="count()" id="myBirth" placeholder="  Birth Year "></p><br>
+
+            <center><button class="btnstyle" onclick="sub()">SUBMIT</button></center><br></br>
+            <p class="btn"> Name is pressed <span id="wordCount">0</span> Times </p>
+            <p class="btn"> Your age is <span id="myBirth1">0</span></p>
+        </table>
+        </div>
+    </center>
+    <head>
+    <script>
+        function count() {
+            var count = document.getElementById("wordCount").innerHTML;
+
+            document.getElementById("wordCount").innerHTML = Number(count) +1;
+        }
+
+        var myFirst = document.getElementById("myFirst");
+        var wordCount = document.getElementById("wordCount");
+
+        function sub() {
+            alert("Your Information is Saved")
+        }
+        var myBirth = document.getElementById("myBirth");
+        var myBirth1 = document.getElementById("myBirth1");
+        var y = 2023
+
+        myBirth.addEventListener("keyup", function () {
+            var val = myBirth.value;
+            myBirth1.innerText = (y - val);
+        });
+       
+    </script>
+    </head>
+</body>
+
+</html>

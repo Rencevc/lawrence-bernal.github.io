@@ -1,0 +1,117 @@
+<div>
+	<div class="skill-container2" data-aos="fade-up" data-aos-delay="350">
+                    <div class="container-tools">
+                        <div class="skill-box">
+                            <img src="assets/images/html5.png">
+                            <h3>HTML5</h3>
+                        </div>
+                    </div>
+	</div>
+</div>
+
+
+
+.skill-container {
+    flex-wrap: wrap;
+}
+
+.skill-container .skill-box {
+    flex: 1 1 30rem;
+    background: var(--color-secondary);
+    border-radius: 2rem;
+    padding: 3rem 2rem 4rem;
+    border: .2rem solid var(--color-primary);
+    text-align: center;
+    transition: .5s ease;
+    cursor: default;
+    width: 40rem;
+    margin-bottom: 1rem;
+}
+
+.skill-container .skill-box:hover h3 {
+    color: var(--main-color);
+    transition: .5s ease;
+}
+
+.skill-container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.most h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.skill-container2 .skill-box {
+    flex: 1 1 30rem;
+    background: var(--color-secondary);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: .2rem solid var(--color-primary);
+    align-items: center;
+    transition: .5s ease;
+    cursor: default;
+    margin-top: 2rem;
+    width: 14rem;
+    height: 12rem;
+}
+
+.skill-container2 .skill-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* .skill-container2 .skill-box:hover img {
+    transform: scale(1.1);
+    transition: .5s ease;
+} */
+
+.skill-container2 .skill-box img {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 2.8rem;
+    margin-top: .8rem;
+}
+
+.skill-container2 h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--skill-color);
+    text-transform: none;
+}
+
+.skill-container2 .skill-box:hover h3 {
+    color: var(--main-color);
+    transition: .5s ease;
+}
+
+.skill-container .skill-box i {
+    font-size: 5rem;
+    /* margin-bottom: 2rem; */
+    color: var(--main-color);
+}
+
+.skill-container .skill-box h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skill-container .skill-box p {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+}
+
+/* .skill-container .skill-box:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--main-color);
+    transform: scale(1.1);
+} */

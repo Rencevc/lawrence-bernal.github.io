@@ -1,0 +1,37 @@
+p {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#order {
+    background-color: violet;
+    font-size: 25;
+    color: black;
+    align-self: center;
+    border: 0;
+}
+
+p:hover {
+    background-color: #2B65FE;
+    color: #FFFFFF;
+}
+
+#order:hover {
+    background-color: #BB2365;
+    color: #FFFFFF;
+} 
+
+p:active {
+    background-color: #BB2365;
+}
+
+#order:active {
+    background-color: #53DDAA;
+}
